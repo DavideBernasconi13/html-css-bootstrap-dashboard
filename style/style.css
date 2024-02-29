@@ -1,4 +1,11 @@
 /* class debug*/
+.db-debug {
+    border: 1px solid red;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Structure container */
+/* -------------------------------------------------------------------------------- */
 .wrapper {
     height: 100vh;
 }
@@ -13,8 +20,10 @@ main {
 
 aside {
     width: 150px;
+    background-image: url(../img/sidebar-bg.png);
+    background-size: cover;
 }
 
-#content {
+#dashboard {
     width: calc(100% - 150px);
 }
