@@ -3,6 +3,12 @@
     border: 1px solid red;
 }
 
+/* Reset */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 /* -------------------------------------------------------------------------------- */
 /* ! Structure container */
 /* -------------------------------------------------------------------------------- */
@@ -22,8 +28,18 @@ aside {
     width: 150px;
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
+    background-position: top top;
 }
 
 #dashboard {
     width: calc(100% - 150px);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Aside */
+/* -------------------------------------------------------------------------------- */
+aside a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 15px;
 }
