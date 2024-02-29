@@ -1,0 +1,19 @@
+.wrapper {
+    height: 100vh;
+}
+
+nav {
+    height: 80px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+header {
+    width: 150px;
+}
+
+#content {
+    width: calc(100% - 150px);
+}
