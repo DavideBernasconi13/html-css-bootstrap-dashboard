@@ -14,10 +14,9 @@ ul {
     display: block;
 }
 
-body {
+/* body {
     font-family: "Roboto", sans-serif;
-}
-
+} */
 /* -------------------------------------------------------------------------------- */
 /* ! Structure container */
 /* -------------------------------------------------------------------------------- */
@@ -42,6 +41,31 @@ aside {
 
 #dashboard {
     width: calc(100% - 150px);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Header */
+/* -------------------------------------------------------------------------------- */
+#header {
+    z-index: 999;
+}
+
+#header .center {
+    width: 80%;
+}
+
+#header .right,
+#header .left {
+    width: 10%;
+}
+
+#header .btn-group a.db-btn-evi {
+    color: var(--bs-orange);
+}
+
+#header .left ul li a {
+    padding: 12px;
+    display: block;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -88,6 +112,22 @@ aside a:hover {
 /* -------------------------------------------------------------------------------- */
 /* ! Media query */
 /* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+
+    #class-table th:first-child,
+    #class-table td:first-child {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    #class-table th:first-child,
+    #class-table td:first-child {
+        width: 20%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     aside a .label {
         display: none;
