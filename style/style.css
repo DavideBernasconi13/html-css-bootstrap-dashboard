@@ -50,7 +50,19 @@ aside {
 aside a {
     text-decoration: none;
     color: #fff;
-    margin-bottom: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    transition: .3s;
+}
+
+aside .icon {
+    margin-right: 1.3rem;
+}
+
+aside a:hover {
+    background-color: var(--bs-gray);
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -71,4 +83,26 @@ aside a {
     height: 30px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Media query */
+/* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    aside a .label {
+        display: none;
+    }
+
+    aside a .icon {
+        margin: 0;
+        text-align: center;
+    }
+
+    aside {
+        width: 70px;
+    }
+
+    #dashboard {
+        width: calc(100% - 70px);
+    }
 }
