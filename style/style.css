@@ -95,7 +95,9 @@ aside a:hover {
 
     aside a .icon {
         margin: 0;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     aside {
