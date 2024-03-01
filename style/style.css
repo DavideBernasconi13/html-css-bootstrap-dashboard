@@ -56,6 +56,16 @@ aside a {
 /* -------------------------------------------------------------------------------- */
 /* ! Table */
 /* -------------------------------------------------------------------------------- */
+#class-table th:not(:first-child),
+#class-table td:not(:first-child) {
+    text-align: center;
+}
+
+#class-table th:first-child,
+#class-table td:first-child {
+    width: 40%;
+}
+
 .avatar {
     width: 30px;
     height: 30px;
