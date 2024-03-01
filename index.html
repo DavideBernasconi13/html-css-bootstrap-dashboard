@@ -67,45 +67,47 @@
             <div id="dashboard" class="overflow-y-auto bg-light">
                 <section id="utlity" class="bg-primary p-3">
                     <div class="container-fluid">
-                        Boolean...
+                        <div class="row">
+                            <div class="col-12 col-lg-6 db-debug">left</div>
+                            <div class="col-12 col-lg-3 db-debug">center</div>
+                            <div class="col-12 col-lg-3 db-debug">right</div>
+                        </div>
                     </div>
                 </section>
                 <div class="container-fluid">
-                    <div class="row row-gap-3">
+                    <div class="row">
                         <!-- Content dashboard -->
-                        <div class="col-12 col-lg-7 db-debug">
+                        <div class="col-12 col-lg-8 db-debug">
                             <!-- Prossime classi -->
-                            <div class="card">
+                            <div class="card mt-4 mb-4">
                                 <div class="card-header">
-                                    Prossime classi
+                                    <p class="h3">Prossime classi</p>
                                 </div>
                                 <div class="card-body">
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">First</th>
-                                                <th scope="col">Last</th>
-                                                <th scope="col">Handle</th>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Data inizio</th>
+                                                <th scope="col">Roi</th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td colspan="2">Larry the Bird</td>
-                                                <td>@twitter</td>
+                                                <td>
+                                                    <img src="img/class-avatar.jpg" alt="" class="avatar">
+                                                    <span>Classe 75</span>
+                                                </td>
+                                                <td>15 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td><button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-trash-can"></i></button>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -114,121 +116,130 @@
 
                             </div>
                             <!-- Faq -->
-                            <div class="card">
+                            <div class="card mb-4">
                                 <div class="card-header text-uppercase">
-                                    F.a.q.
+                                    <p class="h3">f.a.q.</p>
                                 </div>
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
-                                                Accordion Item #1
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <strong>This is the first item's accordion body.</strong> It is shown by
-                                                default, until the collapse plugin adds the appropriate classes that we
-                                                use to style each element. These classes control the overall appearance,
-                                                as well as the showing and hiding via CSS transitions. You can modify
-                                                any of this with custom CSS or overriding our default variables. It's
-                                                also worth noting that just about any HTML can go within the
-                                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="card-body">
+                                    <div class="accordion accordion-flush" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                                                    sapiente obcaecati iure, doloremque a repellat reprehenderit sequi,
+                                                    ut sed vel maxime architecto velit veniam dolorem repudiandae autem
+                                                    unde nostrum debitis. Aliquid molestias aliquam voluptatibus
+                                                    accusamus labore, nemo quibusdam obcaecati magni quasi quae, nostrum
+                                                    veritatis? Veniam, corporis? Corporis quod odit deserunt quis nulla
+                                                    nemo repellat expedita libero, ipsam saepe, corrupti atque!
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                aria-expanded="false" aria-controls="collapseTwo">
-                                                Accordion Item #2
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <strong>This is the second item's accordion body.</strong> It is hidden
-                                                by default, until the collapse plugin adds the appropriate classes that
-                                                we use to style each element. These classes control the overall
-                                                appearance, as well as the showing and hiding via CSS transitions. You
-                                                can modify any of this with custom CSS or overriding our default
-                                                variables. It's also worth noting that just about any HTML can go within
-                                                the <code>.accordion-body</code>, though the transition does limit
-                                                overflow.
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+                                                    ex recusandae qui voluptates accusantium magni, in nihil iusto
+                                                    voluptate, eveniet quia ducimus magnam veniam quidem eligendi ipsum
+                                                    repellendus minima. Asperiores necessitatibus accusantium placeat
+                                                    ipsum illum atque sit vel totam temporibus sapiente perferendis nam
+                                                    et pariatur exercitationem dicta cupiditate cum rerum rem inventore,
+                                                    quas libero. Beatae molestias explicabo quod exercitationem
+                                                    deleniti.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
-                                                Accordion Item #3
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <strong>This is the third item's accordion body.</strong> It is hidden
-                                                by default, until the collapse plugin adds the appropriate classes that
-                                                we use to style each element. These classes control the overall
-                                                appearance, as well as the showing and hiding via CSS transitions. You
-                                                can modify any of this with custom CSS or overriding our default
-                                                variables. It's also worth noting that just about any HTML can go within
-                                                the <code>.accordion-body</code>, though the transition does limit
-                                                overflow.
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                                    culpa voluptatibus ab officia molestiae voluptatum eaque voluptate
+                                                    nulla temporibus rem eius adipisci quam reprehenderit, asperiores
+                                                    porro blanditiis, dolor unde veniam, obcaecati neque tempore
+                                                    exercitationem dolorum expedita? Corrupti a quasi atque eaque
+                                                    numquam voluptate hic totam voluptates expedita, similique ea nihil
+                                                    ipsum aliquid deserunt non inventore quis tenetur incidunt saepe.
+                                                    Ratione sed est voluptatum in laudantium sint! Sunt cum unde tempore
+                                                    quibusdam cumque inventore alias minima aliquam. Pariatur cum
+                                                    tenetur vel.
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-                        <div class="col-12 col-lg-5 db-debug">
+                        <div class="col-12 col-lg-4 db-debug">
                             <!-- To do -->
-                            <div class="card">
+                            <div class="card mt-4 mb-4">
                                 <div class="card-header">
-                                    To do
+                                    <p class="h3">To do</p>
                                 </div>
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value=""
-                                            id="firstCheckboxStretched">
-                                        <label class="form-check-label stretched-link"
-                                            for="firstCheckboxStretched">First checkbox</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value=""
-                                            id="secondCheckboxStretched">
-                                        <label class="form-check-label stretched-link"
-                                            for="secondCheckboxStretched">Second checkbox</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value=""
-                                            id="thirdCheckboxStretched">
-                                        <label class="form-check-label stretched-link"
-                                            for="thirdCheckboxStretched">Third checkbox</label>
-                                    </li>
-                                </ul>
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value=""
+                                                id="firstCheckboxStretched">
+                                            <label class="form-check-label stretched-link"
+                                                for="firstCheckboxStretched">Kickoff nuove classi</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value=""
+                                                id="secondCheckboxStretched">
+                                            <label class="form-check-label stretched-link"
+                                                for="secondCheckboxStretched">Lezione su Bootstrap 5 in
+                                                classe#75</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value=""
+                                                id="thirdCheckboxStretched">
+                                            <label class="form-check-label stretched-link"
+                                                for="thirdCheckboxStretched">Controllare username github
+                                                studenti</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
 
                             </div>
                             <!-- Grafici utenti attivi -->
-                            <div class="card">
+                            <div class="card mb-4">
                                 <div class="card-body">
-                                    <img src="img/stats.jpeg" alt="Grafici statistici" class="img-res">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat
-                                        sapiente sed ducimus perspiciatis, nihil dolor id fugiat assumenda neque sit
-                                        totam laudantium nobis dolores a quisquam aliquid nam. Dolores laborum, sed
-                                        cumque inventore quasi reprehenderit natus itaque voluptates, error ea sunt
-                                        cupiditate omnis at culpa nisi quae. Vitae vel quod possimus consequatur
-                                        asperiores accusamus iure adipisci sed recusandae, ullam dolorem ad laudantium,
-                                        est numquam veniam. Ducimus illo nostrum esse vel totam molestias aperiam earum
-                                        ullam at rem enim quia facilis beatae suscipit cum dolorem laboriosam,
-                                        consectetur dolore inventore exercitationem perferendis ipsa illum provident?
-                                        Voluptatem aliquid consectetur enim id velit?</p>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="img/stats.jpeg" alt="Grafici statistici" class="img-res">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="btn-link">Visualizza report approfondito</a>
                                 </div>
                             </div>
                         </div>
